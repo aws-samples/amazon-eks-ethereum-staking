@@ -24,7 +24,7 @@
     "@aws-cdk/lambda-layer-kubectl-v25": "^2.0.3",
     "@types/js-yaml": "^4.0.5",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "aws-cdk-lib": "^2.78.0",
+    "aws-cdk-lib": "^2.96.0",
     "cdk-nag": "^2.21.22",
     "cdk8s-plus-25": "^2.7.31",
     "constructs": "^10.1.180",
