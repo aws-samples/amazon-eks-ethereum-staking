@@ -1,0 +1,36 @@
+{
+  "name": "ethereum-staking-cdk",
+  "version": "0.1.0",
+  "description": "CDK application to deploy Ethereum staking clients",
+  "main": "bin/app.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|tsx|json|ts)\"",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx lib"
+  },
+  "author": "",
+  "license": "MIT-0",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/prettier": "^2.7.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@aws-cdk/lambda-layer-kubectl-v25": "^2.0.3",
+    "@types/js-yaml": "^4.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "aws-cdk-lib": "^2.78.0",
+    "cdk-nag": "^2.21.22",
+    "cdk8s-plus-25": "^2.7.31",
+    "constructs": "^10.1.180",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "js-yaml": "^4.1.0",
+    "prettier": "^2.8.4"
+  }
+}

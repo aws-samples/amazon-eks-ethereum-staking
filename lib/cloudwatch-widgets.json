@@ -1,0 +1,187 @@
+{
+  "widgets": [
+    {
+      "height": 4,
+      "width": 6,
+      "y": 0,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "stacked": false,
+        "yAxis": {
+          "left": {
+            "min": 0
+          }
+        },
+        "region": "us-east-2",
+        "metrics": [
+          [
+            "AWS/EC2",
+            "CPUUtilization",
+            "InstanceId",
+            "i-02cfe6aa7d59d7d45",
+            { "label": "i-02cfe6aa7d59d7d45" }
+          ]
+        ],
+        "title": "CPU utilization (%)"
+      }
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "y": 4,
+      "x": 6,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "stacked": false,
+        "yAxis": {
+          "left": {
+            "min": 0
+          }
+        },
+        "region": "us-east-2",
+        "metrics": [
+          [
+            "AWS/EC2",
+            "NetworkIn",
+            "InstanceId",
+            "i-02cfe6aa7d59d7d45",
+            { "label": "i-02cfe6aa7d59d7d45" }
+          ]
+        ],
+        "title": "Network in (bytes)"
+      }
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "y": 4,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "stacked": false,
+        "yAxis": {
+          "left": {
+            "min": 0
+          }
+        },
+        "region": "us-east-2",
+        "metrics": [
+          [
+            "AWS/EC2",
+            "NetworkOut",
+            "InstanceId",
+            "i-02cfe6aa7d59d7d45",
+            { "label": "i-02cfe6aa7d59d7d45" }
+          ]
+        ],
+        "title": "Network out (bytes)"
+      }
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "y": 0,
+      "x": 6,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          ["CWAgent", "mem_used_percent", "InstanceId", "i-02cfe6aa7d59d7d45"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-2",
+        "stat": "Average",
+        "period": 300,
+        "title": "mem_used_percent"
+      }
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "y": 0,
+      "x": 17,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            {
+              "expression": "m1/PERIOD(m1)",
+              "label": "diskio_writes/sec",
+              "id": "e1",
+              "period": 60,
+              "region": "us-east-2"
+            }
+          ],
+          [
+            "CWAgent",
+            "diskio_writes",
+            "InstanceId",
+            "i-02cfe6aa7d59d7d45",
+            "name",
+            "nvme0n1",
+            "ImageId",
+            "ami-0f91cedb707b09db0",
+            "InstanceType",
+            "m6g.xlarge",
+            { "id": "m1", "stat": "Sum", "period": 60, "visible": false }
+          ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-2",
+        "stat": "Average",
+        "period": 300,
+        "title": "diskio_writes/s (nvme0n1)"
+      }
+    },
+    {
+      "height": 4,
+      "width": 5,
+      "y": 0,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            {
+              "expression": "m1/PERIOD(m1)",
+              "label": "diskio_reads/sec",
+              "id": "e1",
+              "period": 60,
+              "region": "us-east-2"
+            }
+          ],
+          [
+            "CWAgent",
+            "diskio_reads",
+            "InstanceId",
+            "i-02cfe6aa7d59d7d45",
+            "name",
+            "nvme0n1",
+            "ImageId",
+            "ami-0f91cedb707b09db0",
+            "InstanceType",
+            "m6g.xlarge",
+            { "id": "m1", "stat": "Sum", "visible": false, "period": 60 }
+          ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-2",
+        "stat": "Average",
+        "period": 300,
+        "title": "diskio_reads/s (nvme0n1)"
+      }
+    }
+  ]
+}
